@@ -55,17 +55,19 @@ class CardReceitaWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context){
-          return DetalheReceitaPage(receitaModel: receita,);
-        }
-        ));
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return DetalheReceitaPage(
+            receitaModel: receita,
+          );
+        }));
       },
       child: Container(
         margin: EdgeInsets.all(16),
         child: Card(
           elevation: 4,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
           child: Column(
             children: [
               Container(
@@ -73,7 +75,9 @@ class CardReceitaWidget extends StatelessWidget {
                   height: 150,
                   //child: Image.network(receita.urlImg,fit: BoxFit.cover,),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(topLeft: Radius.circular(16), topRight: Radius.circular(16)),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(16),
+                        topRight: Radius.circular(16)),
                     child: Image.asset(receita.assetImg, fit: BoxFit.cover),
                   )),
               SizedBox(
@@ -92,7 +96,6 @@ class CardReceitaWidget extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
 

@@ -1,7 +1,6 @@
 import 'package:atividade2_sala/componentes/category_section.dart';
 import 'package:atividade2_sala/componentes/restaurant_section.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../api/explorer_data.dart';
